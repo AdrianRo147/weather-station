@@ -19,6 +19,7 @@ weather-station/
 ### Components
 - **Raspberry Pi Pico W**
 - **SSD1306 0.96" OLED Display (I2C)**
+- - **Two LEDs (One red, One green)**
 - Jumper wires and breadboard
 
 ### Wiring Diagram
@@ -27,10 +28,15 @@ weather-station/
 |--------------|-------------|------------|
 | VCC          | 3V3 (36)    | Power      |
 | GND          | GND (23)    | Ground     |
-| SCL          | GP17        | I2C Clock  |
-| SDA          | GP16        | I2C Data   |
+| SCL          | GP19        | I2C Clock  |
+| SDA          | GP18        | I2C Data   |
 
 **I2C Address:** `0x3C`
+
+| LED Color  | Pico W Pin  |
+|------------|-------------|
+| GREEN      | GP16        |
+| RED        | GP17        |
 
 ## Firmware (MicroPython)
 
@@ -49,7 +55,8 @@ weather-station/
 ```
 firmware/
 ├── main.py
-└── ssd1306.py
+├── ssd1306.py
+└── font.py
 ```
 
 
