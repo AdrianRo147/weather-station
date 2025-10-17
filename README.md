@@ -19,7 +19,7 @@ weather-station/
 ### Components
 - **Raspberry Pi Pico W**
 - **SSD1306 0.96" OLED Display (I2C)**
-- - **Two LEDs (One red, One green)**
+- **Two LEDs (One red, One green)**
 - Jumper wires and breadboard
 
 ### Wiring Diagram
